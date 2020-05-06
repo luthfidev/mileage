@@ -1,3 +1,3 @@
-const hasil = require('./src/function')
+const hitung = require('./src/function')
 
-hasil()
+hitung('10:12:21','12:00:00')
