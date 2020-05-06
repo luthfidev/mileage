@@ -10,9 +10,9 @@ function jaraktempuh(waktuawal,waktuakhir){
        console.log(selisih)
     }
 
+    
 
-
-    var s = 8 * 120
+    var s = 8 * selisih
     
     console.log(s) 
 
