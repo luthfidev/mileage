@@ -1,23 +1,40 @@
-function jaraktempuh(waktuawal,waktuakhir){
+const jaraktempuh = (start, end) => {
 
-    // s = v x t
+    let speed       = 6
+    let jaraktempuh = 0
+    let second      = 0
+   // let awalWaktu        = '10:12:21'
 
-  /*   var waktuawal = '10:12:21'
-    var waktuakhir = '12:00:00' */
+   var awal = new Date('2020-01-01T'+start).getTime()
+   var akhir = new Date('2020-01-01T'+end).getTime()
 
-    var selisih = parseInt(waktuakhir) - parseInt(waktuawal);
-    if (!isNaN(selisih)) {
-       console.log(selisih)
-    }
+   console.log(awal) 
+   let diff = (akhir-awal) / 1000
 
-    
+   console.log(diff)
 
-    var s = 8 * selisih
-    
-    console.log(s) 
+   while(diff !== 0 ){
+       diff--
+       second++ //nilai second ini akan menjadi 1
 
+       let timeInminutes = second / 60 //untuk mencari menit maka 1 / 60
 
+       if(timeInminutes === 5){
+           speed+=2
+          
+       }
+       if((timeInminutes-5) % 10 === 0 ){ 
+           if(timeInminutes !== 5){
+            speed++
+           
+           }   
+       }
+   jaraktempuh+=speed
+   
+ }
+   
+return jaraktempuh
 
-}
-
+}       
+   
 module.exports = jaraktempuh
