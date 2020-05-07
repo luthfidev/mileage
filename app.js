@@ -4,5 +4,4 @@ const jaraktempuh = require('./src/function')
 //hasil('10:12:21','12:00:00')
 /* jaraktempuh('10:12:21','12:00:00') */
 
-console.log(jaraktempuh()) 
-console.log(1/60) 
+console.log(jaraktempuh('10:12:21','12:00:00')) 
