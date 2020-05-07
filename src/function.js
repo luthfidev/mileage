@@ -7,10 +7,11 @@ const jaraktempuh = (start, end) => {
 
    var awal = new Date('2020-01-01T'+start).getTime()
    var akhir = new Date('2020-01-01T'+end).getTime()
-  
-   /* console.log(awal) */
+
+   console.log(awal) 
    let diff = (akhir-awal) / 1000
 
+   console.log(diff)
 
    while(diff !== 0 ){
        diff--
